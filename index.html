@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- DOCTYPE: Which tells the browser which version of html the page is writtn in. -->
+<html lang="en">
+	<!--The lang attribute sets the language of the page -->
+	<head>
+		<meta charset="UTF-8" />
+		<!-- The charset attri inside the first meta data tage defines the html character encoding. UTF-8 is recommended by html 5 for web developers beccause it nearly contains all the character an symbols-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- The second meta data tag tells the internet explorer brower to use the most recent rendering engine which is edge-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- The viewport meta tag which tells the brower how to resize the page -->
+		<!-- The content attribute has two parts: the first part sett the pages width to devices screen width. Then we have the inital zoom level of the browser which is set to be a 100% as a default -->
+		<link rel="stylesheet" href="style.css" />
+		<title>Digital Clock</title>
+	</head>
+	<body>
+		<div class="time_of_day_img">
+			<!-- <img src="./images/morning-img.jpg" alt=""> -->
+			<h2>Good morning!</h2>
+		</div>
+		<div class="clock_display">
+			<img src="./images/dgcl-design.svg" alt="" />
+			<div class="clock">
+				<div>
+					<span id="hour">00</span>
+					<span class="text">Hours</span>
+				</div>
+				<div>
+					<span id="minutes">00</span>
+					<span class="text">Minutes</span>
+				</div>
+				<div>
+					<span id="seconds">00</span>
+					<span class="text">Seconds</span>
+				</div>
+				<div>
+					<span id="ampm">AM</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="work.js"></script>
+	</body>
+</html>
