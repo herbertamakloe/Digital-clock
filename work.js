@@ -13,6 +13,8 @@ const updateClock = () => {
 	let secondFigure = new Date().getSeconds();
 	let ampmLogic = "AM";
 
+	// hourFigure = 19; For testing background changes
+
 	if (hourFigure >= 0 && hourFigure < 12) {
 		console.log("It's morning!!!!");
 		greeting.innerHTML = "Good morning!";
@@ -29,7 +31,7 @@ const updateClock = () => {
 		amPm.innerHTML = "PM";
 	} else if (hourFigure >= 19) {
 		console.log("It's evening");
-		todImage.style.backgroundImage = "url(/images/evening-img.svg)";
+		todImage.style.backgroundImage = "url(/images/night-img.svg)";
 		greeting.innerHTML = "Good night!";
 		amPm.innerHTML = "PM";
 	}
